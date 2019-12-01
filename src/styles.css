@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  padding: 32px;
+  margin: 32px;
+}
+
+.setup,
+.puzzle {
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.setup {
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.puzzle {
+  border: 1px solid red;
+  background-color: lightcoral;
+}
+
+.puzzle.solved {
+  border: 1px solid greenyellow;
+  background-color: lightgreen;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.container {
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button:not([disabled]) {
+  cursor: pointer;
+}
+button:not([disabled]):hover {
+  background-color: salmon;
+}

@@ -1,0 +1,16 @@
+<h2>
+  You have filled in your name as {{ myself.name }} and your age as
+  {{ myself.age }} . Make the changes necessary and then click confirm
+</h2>
+<div>
+  <label for="name">Your name</label>
+  <input type="text" id="name" [(ngModel)]="myself.name" (keyup)="onKeyUp()" />
+</div>
+<div>
+  <label for="age">Your age</label>
+  <input type="text" id="age" [(ngModel)]="myself.age" (keyup)="onKeyUp()" />
+</div>
+<div>Filled:{{ isFilled ? "Yes" : "No" }}</div>
+<div>Valid:{{ isValid ? "Yes" : "No" }}</div>
+<br />
+<button [disabled]="!isValid" (click)="onConfirm()">Confirm</button>
